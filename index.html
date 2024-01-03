@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Exercise 2</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.17/fullpage.min.css" integrity="sha512-JIWkx/Vz4qw2gIbB6CCH0f8TdElaUt22FCIIytW9C792hpBivsgmsBqoIMtlDTbqLI9mCA+PXw4/v6BCRLbtKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style> 
+        .section { 
+            text-align: center; 
+            font-size: 3em; 
+            position: relative; 
+        } 
+ 
+        .fp-next { 
+            right: 50px;
+            left: auto;
+        } 
+ 
+        .fp-watermark { 
+            display: none; 
+        } 
+ 
+        #section2 { 
+            background-image: url(images/ye.jpg); 
+        } 
+ 
+        .section { 
+            background-position: center center; 
+            background-repeat: none; 
+            background-size: cover; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+<div id="fullpage"> 
+    <div class="section" id="section1">Section 1</div> 
+    <div class="section" id="section2">Section 2</div> 
+    <div class="section" id="section3"> 
+        <div class="slide"><img src="images/bef.jpg" alt="yall" style="width:60%"></div> 
+        <div class="slide"><img src="images/jogoat.png" alt="win" style="width:60%"></div> 
+        <div class="slide"><img src="images/kratos.gif" alt="falling" style="width:60%"></div> 
+    </div> 
+</div> 
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.17/fullpage.min.js" integrity="sha512-zAHJKGyoPf2Y20Wi4uo32sa/vSvwKfY4tYUt6gJfmkA79X0wt5ZfaxL5GqJ5cMnmvGslWi5PKTo51rHRZqYbJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script> 
+    new fullpage('#fullpage', { 
+        autoScrolling:true, 
+        scrollHorizontally: true, 
+        sectionsColor : ['#fe5f46', '#0998ec', '#fc6c7c', '#fec304'], 
+        navigation: true, 
+        slidesNavigation: true, 
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'finalPage'], 
+        navigationTooltips: ['first', 'second'] 
+    }); 
+</script> 
+</body> 
+</html>
